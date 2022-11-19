@@ -1,48 +1,14 @@
-const container = document.querySelector('#container')
-const gridSize = 16; // how many grid's cells
-let grid = [];
-//let grid = ([],[]);
+const container = document.getElementById("container");
 
-for (let i = 1; i <= gridSize; i++) {
-    grid.push(document.createElement('div'))
-    //grid[i].style.fontSize = 14;
-    //grid[i].classList = i+1;
-}
+function makeRows(rows, cols) {
+  container.style.setProperty('--grid-rows', rows);
+  container.style.setProperty('--grid-cols', cols);
+  for (c = 0; c < (rows * cols); c++) {
+    let cell = document.createElement("div");
+    cell.innerText = (c + 1);
+    container.appendChild(cell).className = "grid-item";
+  };
+};
 
-let i = 1
-grid.forEach(cell => {
-    cell.innerText = `I'm ${i}`;
-    //cell.style.fontSize = 14;
-    cell.classList = i;
-    container.appendChild(cell);
-    i++
-});
+makeRows(16, 16);
 
-//testing grid
-console.log(grid[1]);
-console.log(grid[3]);
-console.log(grid[5]);
-console.log(grid[15]);
-
-
-
-
-
-
-
-
-
-
-/*
-const cells = document.querySelectorAll('div');
-
-for (let i = 1; i < cells.length; i++) {
-    const element = cells[i];
-    cells[i].innerText = "ey";
-}
-
-
-//testing cells
-console.log(cells);
-
-*/
