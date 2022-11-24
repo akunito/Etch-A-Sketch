@@ -11,13 +11,15 @@
 }
 
 .grid-item {
-  padding: 0.7em;
+  padding: 0.1em;
   border: 1px solid #ddd;
   text-align: center;
-  
 }
 
-.grid-item:hover {
+.permahover {
+  padding: 0.1em;
+  border: 1px solid #ddd;
+  text-align: center;
   background-color: blueviolet;
-  
 }
+
