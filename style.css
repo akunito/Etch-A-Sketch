@@ -22,16 +22,21 @@ h1 {
   grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
 
+.cell {
+  padding: 4px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 8;
+}
+/*
 .grid-item {
   padding: 0.1em;
   border: 1px solid #ddd;
   text-align: center;
+  font-size: 8;
 }
-
+*/
 .permahover {
-  padding: 0.1em;
-  border: 1px solid #ddd;
-  text-align: center;
   background-color: blueviolet;
 }
 
@@ -43,7 +48,7 @@ button {
   margin-top: 0.3em;
   margin-bottom: 0.3em;
   
-  
+
 }
 button:hover {
   border: 1px double gray;

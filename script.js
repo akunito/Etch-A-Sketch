@@ -5,48 +5,23 @@ function makeRows(rows, cols) {
   container.style.setProperty('--grid-cols', cols);
   for (c = 0; c < (rows * cols); c++) {
     let cell = document.createElement('div');
-    cell.innerText = (c + 1);
+    //cell.innerText = (c + 1); // show cell's number
     container.appendChild(cell).className = 'cell grid-item';
   };
 };
 
-const vrows = prompt("How many Vertical cells ? | (32 recommended)")
-const hrows = prompt("How many Horizontal cells ? | (32 recommended)")
+// start button
+const start = document.querySelector('.start');
 
-makeRows(vrows, hrows);
-
-
-// setting cells that have been hover
-const cells = document.querySelectorAll('.grid-item');
-
-cells.forEach(cell => {
-  cell.addEventListener('mouseover', () => {
-    cell.className = 'cell permahover'
-    //cell.style.cssText = "background-color: purple;"
-  })
-});
-
-// clear button
-const clear = document.querySelector('.clear');
-
-clear.addEventListener('click', () => {
-  cells.forEach(cell => {
-      cell.className = 'cell grid-item'
-    })
-});
-
-// reset button
-const reset = document.querySelector('.reset');
-
-reset.addEventListener('click', () => {
+start.addEventListener('click', () => {
   const toRemove = document.querySelectorAll('.cell')
 
   toRemove.forEach(cell => {
     container.removeChild(cell)
   })
   
-  const vrows = prompt("How many Vertical cells ? | (32 recommended)")
-  const hrows = prompt("How many Horizontal cells ? | (32 recommended)")
+  const vrows = prompt("How many Vertical cells ? | (128 recommended)")
+  const hrows = prompt("How many Horizontal cells ? | (128 recommended)")
 
   makeRows(vrows, hrows);
 
