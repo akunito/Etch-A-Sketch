@@ -30,8 +30,30 @@ start.addEventListener('click', () => {
 
   cells.forEach(cell => {
     cell.addEventListener('mouseover', () => {
-      cell.className = 'cell permahover'
-      //cell.style.cssText = "background-color: purple;"
+      if (cell.className == 'cell grid-item'){
+        console.log("this cell is permahover1 now")
+        cell.className = 'cell permahover1'
+      } else if (cell.className == 'cell permahover1') {
+        cell.className = 'cell permahover2'
+      } else if (cell.className == 'cell permahover2') {
+        cell.className = 'cell permahover3'
+      } else if (cell.className == 'cell permahover3') {
+        cell.className = 'cell permahover4'
+      } else if (cell.className == 'cell permahover4') {
+        cell.className = 'cell permahover5'
+      } else if (cell.className == 'cell permahover5') {
+        cell.className = 'cell permahover6'
+      } else if (cell.className == 'cell permahover6') {
+        cell.className = 'cell permahover7'
+      } else if (cell.className == 'cell permahover7') {
+        cell.className = 'cell permahover8'
+      } else if (cell.className == 'cell permahover8') {
+        cell.className = 'cell permahover9'
+      } else if (cell.className == 'cell permahover9') {
+        cell.className = 'cell permahover10'
+      } else if (cell.className == 'cell permahover10') {
+        cell.className = 'cell permahover11'
+      }
     })
   });
 
