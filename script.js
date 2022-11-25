@@ -10,9 +10,8 @@ function makeRows(rows, cols) {
   };
 };
 
-
-const vrows = prompt("Insert how many Vertical cells (32 recommended)")
-const hrows = prompt("Insert how many Vertical cells (32 recommended)")
+const vrows = prompt("How many Vertical cells ? | (32 recommended)")
+const hrows = prompt("How many Horizontal cells ? | (32 recommended)")
 
 makeRows(vrows, hrows);
 
@@ -46,8 +45,8 @@ reset.addEventListener('click', () => {
     container.removeChild(cell)
   })
   
-  const vrows = prompt("Insert how many Vertical cells (32 recommended)")
-  const hrows = prompt("Insert how many Vertical cells (32 recommended)")
+  const vrows = prompt("How many Vertical cells ? | (32 recommended)")
+  const hrows = prompt("How many Horizontal cells ? | (32 recommended)")
 
   makeRows(vrows, hrows);
 
