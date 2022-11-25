@@ -10,7 +10,10 @@ function makeRows(rows, cols) {
   };
 };
 
-makeRows(32, 32);
+const vrows = prompt("Insert how many Vertical cells (32 recommended)")
+const hrows = prompt("Insert how many Vertical cells (32 recommended)")
+
+makeRows(vrows, hrows);
 
 const cells = document.querySelectorAll('.grid-item');
 
@@ -19,4 +22,13 @@ cells.forEach(cell => {
     cell.className = 'permahover'
     //cell.style.cssText = "background-color: purple;"
   })
+});
+
+const reset = document.querySelector('button');
+
+// reset button
+reset.addEventListener('click', () => {
+  cells.forEach(cell => {
+      cell.className = 'grid-item'
+    })
 });

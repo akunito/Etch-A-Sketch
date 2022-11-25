@@ -1,3 +1,15 @@
+body{
+  background-color:antiquewhite;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
 :root {
   --grid-cols: 1;
   --grid-rows: 1;
@@ -23,3 +35,17 @@
   background-color: blueviolet;
 }
 
+button {
+  padding: 1em;
+  background-color:darkmagenta;
+  border: 1px solid blue;
+  text-align: center;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  
+  
+}
+button:hover {
+  border: 1px double gray;
+  background-color:magenta;
+}
