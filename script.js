@@ -20,8 +20,8 @@ start.addEventListener('click', () => {
     container.removeChild(cell)
   })
   
-  const vrows = prompt("How many Vertical cells ? | (128 recommended)")
-  const hrows = prompt("How many Horizontal cells ? | (128 recommended)")
+  const vrows = prompt("How many Vertical cells ? | (200 recommended)")
+  const hrows = prompt("How many Horizontal cells ? | (200 recommended)")
 
   makeRows(vrows, hrows);
 
